@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/karmakoder/alexa-opentable#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "restler": "^3.4.0"
   }
 }
