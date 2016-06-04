@@ -1,0 +1,26 @@
+{
+  "name": "alexa-opentable",
+  "version": "1.0.0",
+  "description": "alexa hack for opentable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karmakoder/alexa-opentable.git"
+  },
+  "keywords": [
+    "alexa",
+    "opentable"
+  ],
+  "author": "karmakoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karmakoder/alexa-opentable/issues"
+  },
+  "homepage": "https://github.com/karmakoder/alexa-opentable#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
