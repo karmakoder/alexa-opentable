@@ -1,2 +1,3 @@
 # alexa-opentable
-An alexa hack to make a restaurant reservation
+An alexa hack to make a restaurant reservation.
+Yo
