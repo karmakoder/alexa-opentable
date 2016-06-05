@@ -8,10 +8,22 @@ var Horseman = require('node-horseman');
 var defaultTimeout = 20000;
 
 
+/**
+ * @memberOf openTable
+ *
+ * @description
+ * The method that calls OpenTableAPI and gets the reservation url of the restaurant.
+ *
+ * @param {Request} req
+ * @param {Response} res
+ * @returns {String} ok or fail.
+ * @private
+ */
 exports.fetchReservationUrl = function(req, res) {
 	var partySize = req.query.partySize != undefined ? req.query.partySize : 2;
 	var dateTime = req.query.date != undefined ? req.query.date : "2016-06-05T00:00:00";
 	var makeActualReservation = req.query.makeActualReservation != undefined ? req.query.makeActualReservation : false;
+	console.log("name of restaurant "+req.query.name+" makeActualReservation "+makeActualReservation);
 	rest.get("http://opentable.herokuapp.com/api/restaurants?state=NY&name=" +req.query.name, {
 		timeout: 5000 //1000ms = 1s
 	})
@@ -32,7 +44,17 @@ exports.fetchReservationUrl = function(req, res) {
 		});
 }; //fetchReservationUrl
 
-
+/**
+ * @memberOf openTable
+ *
+ * @description
+ * The method that opens reservation url in a headless browser and makes the resrvation using some dummy values.
+ *
+ * @param {String} url
+ * @param {String} makeActualReservation : when set to true, this makes an actual reservation. PLZ use judiciousy.
+ * @returns {Response} res.
+ * @private
+ */
 function findAvailableSlotsAndReserve(url, makeActualReservation, res) {
 	var horseman = new Horseman({
 		timeout: defaultTimeout
