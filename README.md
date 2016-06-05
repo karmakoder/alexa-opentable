@@ -18,5 +18,7 @@ make an actual reservation so we have built a hack to make reservation using hor
 
 Please note that for the purposes of demo, a fake user profile is used to make an actual reservation.
 
+http://bit.ly/1PdgSdT
+
 
 
