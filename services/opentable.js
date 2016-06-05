@@ -55,8 +55,8 @@ function findAvailableSlotsAndReserve(url, makeActualReservation, res) {
 			.type('input[name="lastName"]', 'Yu')
 			.type('input[name="phoneNumber"]', '9934567890')
 			.type('input[name="email"]', 'james.yutoo+' + randomNmbr + '@gmail.com')
-			//.click("button:contains('Complete Reservation')")
-			//.keyboardEvent('keypress', 16777221)
+			.click("button:contains('Complete Reservation')")
+			.keyboardEvent('keypress', 16777221)
 			.wait(10000)
 			.catch(function (e) {
 				reservationSucceded = false;
