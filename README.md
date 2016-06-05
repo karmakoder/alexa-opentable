@@ -1,5 +1,8 @@
+In the first quarter of 2016, approximately 50% of OpenTable’s global seated diners
+originated on a mobile device. Voice definetely feels like next frontier of the human interactivity with machines.
+
 # alexa-opentable
-Voice definetely feels like next frontier of the human interactivity with machines.
+
 Here is an alexa hack to make a restaurant reservation using OpenTable.
 This nodejs app uses unofficial openTableAPI http://opentable.herokuapp.com/ to get the
 reservation URL of a restaurant. Unfortunately, AopenTable doesnt expose an api end-point to
